@@ -7,7 +7,7 @@ $pwd = $_POST["pwd"];
 if($uname=="asa" && $pwd=="anu"){
     $_SESSION["user"] = $uname;
     echo "<center>LOGIN SUCCESS. CLICK <a href='index.php'>HERE</a> TO REDIRECT<br></center>";
-    setcookie("user", "asa", time()+60);
+    setcookie("user", "asa", time()+3600);
     header("refresh:5; url=index.php");
 } else {
     echo "<center>LOGIN FAILED. PLEASE TRY AGAIN<br></center>";
